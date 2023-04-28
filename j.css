@@ -1,0 +1,48 @@
+body{
+    font-family: "roboto";
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.a{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+
+}
+button{
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149cea;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    font-size: 16px;
+    font-weight: bold;
+}
+button::before, button:hover::before{
+    transform: scale(0);
+}
+button:hover{
+    box-shadow: inset 0px 0px 25px #149cea;
+}
+.p{
+    font-family: inter;
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(270deg,#2214ea,#149cea );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+img{
+    width: 400px;
+    height: 400px;
+}

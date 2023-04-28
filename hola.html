@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="j.css">
+    <title>¿?</title>
+    <script>
+		function mostrarSiguientePregunta(respuesta) {
+		
+			var siguientePregunta = document.getElementById("pregunta" + respuesta).innerHTML;
+			var siguienteRespuesta = document.getElementById("respuesta" + respuesta).innerHTML;
+			
+			document.getElementById("pregunta").innerHTML = siguientePregunta;
+			document.getElementById("respuesta").innerHTML = siguienteRespuesta;
+		}
+        function mostrarImagen() {
+            document.getElementById("miImagen").style.display = "block";
+        }
+    </script>    
+</head>
+<body>
+    
+
+    <div class="a">
+	<div class="p" id="pregunta">¿te caigo bien?</div>
+	<div id="respuesta">
+		<button onclick="mostrarSiguientePregunta(1)">si</button>
+		<button onclick="">no</button>
+	</div>
+	
+	<div class="p" id="pregunta1" style="display:none">¿que tanto?</div>
+	<div id="respuesta1" style="display:none">
+		<button >como compas</button>
+		<button onclick="mostrarImagen()">algo mas</button>
+	</div>
+	<img id="miImagen" src="js.png" style="display:none">
+    </div>
+</body>
+</html>
